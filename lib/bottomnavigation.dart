@@ -34,8 +34,9 @@ class _BottomNavigationState extends State<BottomNavigation> {
       body: screens[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
+        showSelectedLabels: true,
+        selectedFontSize: 13,
+        unselectedFontSize: 13,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
               icon: Image.asset('bottom/home.png'),
@@ -47,7 +48,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
           ),
           BottomNavigationBarItem(
             icon: Image.asset("bottom/scan.png"),
-            label: '_',
+            label: '',
           ),
           BottomNavigationBarItem(
             icon: Image.asset("bottom/noti.png"),
@@ -59,7 +60,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.white,
+        selectedItemColor: Colors.blueAccent,
         onTap: _onItemTapped,
       ),
     );
