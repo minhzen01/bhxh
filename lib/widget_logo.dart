@@ -14,6 +14,7 @@ class Widget_Logo extends StatelessWidget {
     return Container(
       padding: EdgeInsets.only(top: 25, left: 2),
       child: Column(
+
         children: [
           Container(
             decoration: BoxDecoration(
@@ -28,7 +29,7 @@ class Widget_Logo extends StatelessWidget {
             width: 100,
             padding: EdgeInsets.only(top: 5),
             child: Center(
-                child: Text('$name')
+                child: Text('$name', textAlign: TextAlign.center,)
             ),
           ),
         ],

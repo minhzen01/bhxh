@@ -41,10 +41,28 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   SingleChildScrollView(
+                    padding: EdgeInsets.only(top: 105, left: 15),
                     scrollDirection: Axis.horizontal,
-                    child: Card(
-                      margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
-                      child: TextField(),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: Colors.white,
+                          ),
+                          width: 350,
+                          height: 140,
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(left: 20),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: Colors.white,
+                          ),
+                          width: 350,
+                          height: 140,
+                        ),
+                      ],
                     ),
                   )
                 ],
