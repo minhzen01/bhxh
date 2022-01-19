@@ -12,7 +12,7 @@ class Widget_Logo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 25, left: 2),
+      padding: const EdgeInsets.only(top: 25, left: 2),
       child: Column(
 
         children: [
@@ -27,7 +27,7 @@ class Widget_Logo extends StatelessWidget {
           ),
           Container(
             width: 100,
-            padding: EdgeInsets.only(top: 5),
+            padding: const EdgeInsets.only(top: 5),
             child: Center(
                 child: Text('$name', textAlign: TextAlign.center,)
             ),
